@@ -139,7 +139,10 @@ urls_from_google_doc = [
   "https://bulletin.miamioh.edu/courses-instruction/cse/",
   "https://bulletin.miamioh.edu/courses-instruction/bus/",
   "https://bulletin.miamioh.edu/courses-instruction/bls/",
-  "https://bulletin.miamioh.edu/courses-instruction/sta/"
+  "https://bulletin.miamioh.edu/courses-instruction/sta/",
+  
+  # DAR
+  "https://miamioh.edu/onestop/academic-records/degree-audit-report.html"
 ]
 
 
