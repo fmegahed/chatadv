@@ -34,8 +34,6 @@ def load_docs():
     return pickle.load(open('data/website_data.pkl', 'rb'))
 
 def format_docs(docs):
-    if docs is None:
-        docs = load_docs()
     return "\n\n".join(doc.page_content for doc in docs)
 
 def setup_rag_chain():
@@ -215,7 +213,7 @@ def create_pdf(chat_messages, user_name):
     # ChatAdv's Interaction with the user
     draw_heading(pdf, f"{pdf.user_name}'s Interaction with ChatAdv")
 
-    for message in chat_messages:
+    for message in chat_messages[:-3]:
         role = message["role"]
         content = clean_text(re.sub(r"\n\s*\n", "\n", message["content"]))
 
